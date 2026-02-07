@@ -19,6 +19,21 @@ Mode = There is no determined fashion for the project
 
 Variance = This dataset contains a severe outlier (10,000), which heavily distorts the variance. Ignoring this is a classic analytical mistake.
 
+## Mean
+The mean represents the average income value. In this dataset, the mean is influenced by high-income values, which can distort the perception of typical income.
+
+## Median
+The median represents the middle income value and provides a more robust measure of central tendency in the presence of outliers.
+
+## Mode
+The mode represents the most frequent income value. In this dataset, the mode has limited interpretative value due to low repetition of values.
+
+## Variance and Standard Deviation
+Variance and standard deviation measure income dispersion. High values indicate significant variability in income levels.
+
+## Interpretation
+The analysis shows that income distribution is skewed, with high-income outliers affecting the mean more than the median. This highlights the importance of choosing appropriate statistical measures when analyzing income data.
+
 
 Results
 
@@ -31,7 +46,7 @@ Sample variance
 		??2 = 6,531,222.22
 
 
-What you are overlooking (and shouldnít)
+What you are overlooking (and shouldn‚Äôt)
 
 The variance explodes almost entirely because of the 10,000 value.
 
@@ -43,10 +58,11 @@ Outlier analysis
 
 Use of IQR, boxplots, log transformation, or winsorization
 
-Using this ìrawî variance for business or supply chain decisions will lead to bad conclusions.
+Using this ‚Äúraw‚Äù variance for business or supply chain decisions will lead to bad conclusions.
 
 When to use each one
 
 Population variance ? when you have the entire population.
+
 
 Sample variance ? when this is just a sample (which is almost always the case in practice).
