@@ -1,0 +1,52 @@
+id,income
+1,1200
+2,1500
+3,1800
+4,2000
+5,2200
+6,2500
+7,3000
+8,3500
+9,4000
+10,10000
+
+
+Mean = 3170
+
+Median = 2350
+
+Mode = There is no determined fashion for the project
+
+Variance = This dataset contains a severe outlier (10,000), which heavily distorts the variance. Ignoring this is a classic analytical mistake.
+
+
+Results
+
+Population variance 
+
+		??2 = 5,878,100
+
+Sample variance 
+
+		??2 = 6,531,222.22
+
+
+What you are overlooking (and shouldn’t)
+
+The variance explodes almost entirely because of the 10,000 value.
+
+Without this value, variance would drop dramatically.
+
+In real-world Data Analysis, this requires:
+
+Outlier analysis
+
+Use of IQR, boxplots, log transformation, or winsorization
+
+Using this “raw” variance for business or supply chain decisions will lead to bad conclusions.
+
+When to use each one
+
+Population variance ? when you have the entire population.
+
+Sample variance ? when this is just a sample (which is almost always the case in practice).
